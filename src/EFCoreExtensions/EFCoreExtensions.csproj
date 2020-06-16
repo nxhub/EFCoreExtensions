@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageId>Microsoft.EntityFrameworkCore.Migrate</PackageId>
+    <Version>0.0.1-Alpha</Version>
+    <Authors>NXHub</Authors>
+    <Company>NXHub</Company>
+    <Product>Microsoft.EntityFrameworkCore.Migrate</Product>
+    <Copyright>Copyright © NXHub</Copyright>
+    <PackageTags>nxhub efcore migrate</PackageTags>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageIcon>icon.png</PackageIcon>
+    <Description>用于在程序启动时迁移数据库:
+host.TryMigrateDb&lt;RealDbContext&gt;();</Description>
+    <PackageReleaseNotes>完成初步接口。</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
