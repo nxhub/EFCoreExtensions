@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace Microsoft.AspNetCore.Builder
 {
@@ -14,17 +15,19 @@ namespace Microsoft.AspNetCore.Builder
         {
             host.ApplicationStarted.Register(() =>
             {
+                using IServiceScope scope = app.ApplicationServices.CreateScope();
+
                 try
                 {
-                    IServiceScope scope = app.ApplicationServices.CreateScope();
-
-                    TDbContext context = scope.ServiceProvider.GetService<TDbContext>();
+                    using TDbContext context = scope.ServiceProvider.GetService<TDbContext>();
 
                     context.Database.Migrate();
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex);
+                    ILogger logger = scope.ServiceProvider.GetService<ILogger>();
+
+                    logger?.LogWarning(ex, ex.Message);
                 }
             });
 
