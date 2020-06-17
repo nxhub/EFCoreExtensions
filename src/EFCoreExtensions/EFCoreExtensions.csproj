@@ -6,11 +6,11 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageLicenseExpression></PackageLicenseExpression>
-    <PackageId>NXHub.EntityFrameworkCore.Migrater</PackageId>
+    <PackageId>NXHub.EntityFrameworkCore.Migrate</PackageId>
     <Version>0.0.1</Version>
     <Authors>NXHub</Authors>
     <Company>NXHub</Company>
-    <Product>NXHub.EntityFrameworkCore.Migrater</Product>
+    <Product>NXHub.EntityFrameworkCore.Migrate</Product>
     <Copyright>Copyright © NXHub</Copyright>
     <PackageTags>nxhub efcore migrate</PackageTags>
     <RepositoryType>GIT</RepositoryType>
@@ -19,6 +19,7 @@
     <PackageReleaseNotes>修改版本号，发布正式版本。</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/nxhub/EFCoreExtensions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/nxhub/EFCoreExtensions</RepositoryUrl>
+    <AssemblyName>NXHub.EntityFrameworkCore.Migrate</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

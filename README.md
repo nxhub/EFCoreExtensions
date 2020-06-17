@@ -3,7 +3,7 @@
 
 ## 安装
 ```xml
-<PackageReference Include="NXHub.EntityFrameworkCore.Migrater" Version="0.0.1" />
+<PackageReference Include="NXHub.EntityFrameworkCore.Migrate" Version="0.0.1" />
 ```
 
 ## 使用
