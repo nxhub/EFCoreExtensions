@@ -9,8 +9,7 @@ namespace Microsoft.AspNetCore.Builder
     public static class EFCoreHostApplicationExtensions
     {
         public static IHostApplicationLifetime TryMigrateDb<TDbContext>(
-            this IHostApplicationLifetime host,
-            IApplicationBuilder app)
+            this IHostApplicationLifetime host, IApplicationBuilder app)
             where TDbContext : DbContext
         {
             host.ApplicationStarted.Register(() =>

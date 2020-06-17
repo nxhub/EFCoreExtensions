@@ -6,18 +6,19 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageLicenseExpression></PackageLicenseExpression>
-    <PackageId>Microsoft.EntityFrameworkCore.Migrate</PackageId>
-    <Version>0.0.1-Alpha</Version>
+    <PackageId>NXHub.EntityFrameworkCore.Migrater</PackageId>
+    <Version>0.0.1</Version>
     <Authors>NXHub</Authors>
     <Company>NXHub</Company>
-    <Product>Microsoft.EntityFrameworkCore.Migrate</Product>
+    <Product>NXHub.EntityFrameworkCore.Migrater</Product>
     <Copyright>Copyright © NXHub</Copyright>
     <PackageTags>nxhub efcore migrate</PackageTags>
     <RepositoryType>GIT</RepositoryType>
     <PackageIcon>icon.png</PackageIcon>
-    <Description>用于在程序启动时迁移数据库:
-host.TryMigrateDb&lt;RealDbContext&gt;();</Description>
-    <PackageReleaseNotes>完成初步接口。</PackageReleaseNotes>
+    <Description>用于在程序启动时迁移数据库: host.TryMigrateDb&lt;TestDataContext&gt;(app);</Description>
+    <PackageReleaseNotes>修改版本号，发布正式版本。</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/nxhub/EFCoreExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nxhub/EFCoreExtensions</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

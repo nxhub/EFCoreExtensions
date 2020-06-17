@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EFCoreExtensions\EFCoreExtensions.csproj" />
+    <PackageReference Include="NXHub.EntityFrameworkCore.Migrate" Version="0.0.1-alpha" />
   </ItemGroup>
 
 
