@@ -14,19 +14,21 @@ namespace Microsoft.AspNetCore.Builder
         {
             host.ApplicationStarted.Register(() =>
             {
-                using IServiceScope scope = app.ApplicationServices.CreateScope();
-
-                try
+                using (IServiceScope scope = app.ApplicationServices.CreateScope())
                 {
-                    using TDbContext context = scope.ServiceProvider.GetService<TDbContext>();
+                    try
+                    {
+                        using (TDbContext context = scope.ServiceProvider.GetService<TDbContext>())
+                        {
+                            context.Database.Migrate();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        ILogger logger = scope.ServiceProvider.GetService<ILogger>();
 
-                    context.Database.Migrate();
-                }
-                catch (Exception ex)
-                {
-                    ILogger logger = scope.ServiceProvider.GetService<ILogger>();
-
-                    logger?.LogWarning(ex, ex.Message);
+                        logger?.LogWarning(ex, ex.Message);
+                    }
                 }
             });
 

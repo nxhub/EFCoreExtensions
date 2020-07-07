@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -18,7 +18,7 @@
     <Description>用于在程序启动时迁移数据库: host.TryMigrateDb&lt;TestDataContext&gt;(app);</Description>
     <PackageReleaseNotes>修改图标。</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/nxhub/EFCoreExtensions</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/nxhub/EFCoreExtensions</RepositoryUrl>
+    <RepositoryUrl>https://github.com/nxhub/EFCoreExtensions.git</RepositoryUrl>
     <AssemblyName>NXHub.EntityFrameworkCore.Migrate</AssemblyName>
     <RootNamespace>NXHub.EntityFrameworkCore.Migrate</RootNamespace>
   </PropertyGroup>
