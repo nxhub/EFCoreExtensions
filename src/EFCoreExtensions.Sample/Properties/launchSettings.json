@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "EFCoreExtensions.Demo": {
+    "EFCoreExtensions.Sample": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

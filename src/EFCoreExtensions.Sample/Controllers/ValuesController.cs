@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace EFCoreExtensions.Demo.Controllers
+namespace EFCoreExtensions.Sample.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

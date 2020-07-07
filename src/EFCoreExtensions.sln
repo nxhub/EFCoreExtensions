@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30128.36
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreExtensions", "EFCoreExtensions\EFCoreExtensions.csproj", "{7EE46B82-3A7B-4DFC-AD52-3A32CFF1EC69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreExtensions.Demo", "EFCoreExtensions.Demo\EFCoreExtensions.Demo.csproj", "{62099360-76FD-406B-9A71-17C94414C227}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreExtensions.Sample", "EFCoreExtensions.Sample\EFCoreExtensions.Sample.csproj", "{42748A3C-0B8B-43C3-9397-F89A116DAA09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{7EE46B82-3A7B-4DFC-AD52-3A32CFF1EC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EE46B82-3A7B-4DFC-AD52-3A32CFF1EC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EE46B82-3A7B-4DFC-AD52-3A32CFF1EC69}.Release|Any CPU.Build.0 = Release|Any CPU
-		{62099360-76FD-406B-9A71-17C94414C227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62099360-76FD-406B-9A71-17C94414C227}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62099360-76FD-406B-9A71-17C94414C227}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62099360-76FD-406B-9A71-17C94414C227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42748A3C-0B8B-43C3-9397-F89A116DAA09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42748A3C-0B8B-43C3-9397-F89A116DAA09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42748A3C-0B8B-43C3-9397-F89A116DAA09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42748A3C-0B8B-43C3-9397-F89A116DAA09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

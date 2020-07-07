@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace EFCoreExtensions.Demo
+namespace EFCoreExtensions.Sample
 {
     public class Program
     {
