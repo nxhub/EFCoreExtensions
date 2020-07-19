@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <AssemblyName>NXHub.EntityFrameworkCore.Migrate</AssemblyName>
+    <RootNamespace>NXHub.EntityFrameworkCore.Migrate</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\nxhub.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -19,8 +23,6 @@
     <PackageReleaseNotes>修改图标。</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/nxhub/EFCoreExtensions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/nxhub/EFCoreExtensions.git</RepositoryUrl>
-    <AssemblyName>NXHub.EntityFrameworkCore.Migrate</AssemblyName>
-    <RootNamespace>NXHub.EntityFrameworkCore.Migrate</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
